@@ -1,0 +1,9 @@
+//------------------------------------------------------------------------------
+// Mark-up in header files
+//------------------------------------------------------------------------------
+$cfile "quickuser.h"
+$cfile "C:/Users/Nick/projects/QGooglePlayServices/QGooglePlayServices.h"
+$cfile "C:/Users/Nick/projects/QGameCircle/QGameCircle.h"
+$cfile "C:/Users/Nick/projects/s3eAndroidFullscreen/quick/QAndroidFullscreen.h"
+$cfile "C:/Users/Nick/projects/IwGameController/quick/QGameController.h"
+$cfile "C:/Users/Nick/projects/dpi/h/PixelDensity.h"

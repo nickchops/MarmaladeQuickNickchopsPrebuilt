@@ -1,0 +1,23 @@
+# This file pulls in all the extensions my wrappers use.
+# Put the following in your game project:
+#    subproject MarmaladeQuickNichchopsPrebuilt/DeployIncludes.mkf
+# Comment out any you're not using to keep app package size down.
+
+# Or more useful is to use this as an example and just put the subprojects
+# you want directly in your project's MKB.
+
+# These extensions are all used at deploy time to package or link libs.
+# If you leave any out, the app will run, but APIs will fail, e.g.
+# MyAPI:isAvailable() will return false.
+
+# Note that android-custom-activity will be set by s3eAndroidUserActivity
+# which is a subproject of both s3eAndroidFullscreen and IwGameController
+
+subprojects
+{
+    s3eGooglePlayServices
+    s3eGameCircle
+    s3eAndroidFullScreen
+    IwGameController #Pulls in extensions like s3eIOSGameController
+    dpi/PixelDensity #Pulls in s3ePixelDensity
+}

@@ -1,0 +1,21 @@
+
+# This subproject includes all my wrappers for building into
+# the Quick target binaries. Put "subproject MarmaladeQuickNickchopsPrebuilt"
+# in <sdk>/quick/quickuser.mkf, assuming that the root to the parent folder
+# of this project is included via <sdk>/s3e/s3e-defaults.mkf
+
+subprojects
+{
+    #Wrapper projects for C APIs in the SDK
+    QGooglePlayServices
+    QGameCircle
+    
+    #Wrappers for non-official extension APIs
+    s3eAndroidFullScreen/quick/QAndroidFullscreen
+    IwGameController/quick/QGameController
+    
+    #In this one, the C++ and Lua APIs use the same mkf project and header
+    #There is no /quick/QPixelDensity - the public C++ header just uses
+    #tolua_begin/end calls directly
+    dpi/PixelDensity
+}
